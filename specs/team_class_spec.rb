@@ -9,19 +9,19 @@ class TestTeamClass < MiniTest::Test
   end
 
   def test_get_team_name
-    assert_equal("Rangers", @team.get_team_name)
+    assert_equal("Rangers", @team.team_name)
   end
 
   def test_get_players
-    assert_equal(["Bob", "John"], @team.get_players)
+    assert_equal(["Bob", "John"], @team.players_array)
   end
 
   def test_get_coach_name
-    assert_equal("Frank", @team.get_coach_name)
+    assert_equal("Frank", @team.coach_name)
   end
 
   def test_set_coach_name
-    @team.set_coach_name("James")
-    assert_equal("James", @team.get_coach_name)
+    @team.coach_name = "James"
+    assert_equal("James", @team.coach_name)
   end
 end
