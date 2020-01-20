@@ -10,4 +10,15 @@ class Team
   def add_new_player(new_player)
     @players_array.push(new_player)
   end
+
+  def is_player_in_team?(name)
+    for player in @players_array
+      if player == name
+        return true
+      else
+        return false
+      end
+    end
+  end
+  
 end

@@ -29,4 +29,12 @@ class TestTeamClass < MiniTest::Test
     @team.add_new_player("Joe")
     assert_equal(3, @team.players_array.count())
   end
+
+  def test_is_player_in_team__true
+    assert_equal(true, @team.is_player_in_team?("Bob"))
+  end
+
+  def test_is_player_in_team__false
+    assert_equal(false, @team.is_player_in_team?("Mark"))
+  end
 end
