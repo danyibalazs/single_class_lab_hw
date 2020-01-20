@@ -7,4 +7,17 @@ class TestTeamClass < MiniTest::Test
   def setup
     @team = Team.new("Rangers", ["Bob", "John"], "Frank")
   end
+
+  def test_get_team_name
+    assert_equal("Rangers", @team.get_team_name)
+  end
+
+  def test_get_players
+    assert_equal(["Bob", "John"], @team.get_players)
+  end
+
+  def test_get_coah_name
+    assert_equal("Frank", @team.get_coach_name)
+  end
+
 end
