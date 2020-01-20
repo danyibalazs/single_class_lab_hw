@@ -20,8 +20,8 @@ class Student
     @cohort = new_cohort
   end
 
-  def talk()
-    return "I can talk!"
+  def talk(sentence)
+    return sentence
   end
 
   def favourite_language(language)

@@ -37,4 +37,9 @@ class TestTeamClass < MiniTest::Test
   def test_is_player_in_team__false
     assert_equal(false, @team.is_player_in_team?("Mark"))
   end
+
+  def test_play_result
+    @team.play_result("won")
+    assert_equal(1, @team.points)
+  end
 end
