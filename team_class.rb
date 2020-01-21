@@ -16,9 +16,8 @@ class Team
     for player in @players_array
       if player == name
         return true
-      else
-        return false
       end
+      return false
     end
   end
 
