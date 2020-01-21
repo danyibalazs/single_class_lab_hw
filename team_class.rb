@@ -17,8 +17,8 @@ class Team
       if player == name
         return true
       end
-      return false
     end
+    return false
   end
 
   def play_result(result)
